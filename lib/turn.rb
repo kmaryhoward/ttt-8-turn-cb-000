@@ -27,7 +27,8 @@ end
 
 def turn(array)
   puts "Please enter 1-9:"
-  index = input_to_index(index)
+  input = gets.strip
+  index = input_to_index(input)
   if !position_taken?(array, index) && valid_move?(array, index)
     move(array, index)
     display_board(array)
