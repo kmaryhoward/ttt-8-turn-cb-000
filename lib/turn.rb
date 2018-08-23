@@ -30,7 +30,7 @@ def turn(array)
   input = gets.strip
   index = input_to_index(input)
   if !position_taken?(array, index) && valid_move?(array, index)
-    move(array, index, value)
+    move(array, index)
     display_board(array)
   else
     puts "Please enter valid input"
