@@ -34,5 +34,6 @@ def turn(array)
     display_board(array)
   else
     puts "Please enter valid input"
+    turn(array)
   end
 end
